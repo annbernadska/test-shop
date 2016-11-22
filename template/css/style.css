@@ -1,0 +1,488 @@
+@charset "utf-8";
+/*All*/
+*{
+    margin: 0;
+    padding:0;
+    outline: none; /*рамка вокруг ввода текста*/
+}
+a{
+    text-decoration: none;
+    color: #B4B4B4;
+}
+#errors{
+    padding-left: 5px;
+    color: #ff2028;
+}
+a:hover{
+    text-decoration: none;
+    color: #575757;
+}
+html{
+    height: 100%
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #333;
+    font-family: "Segoe UI", Arial, sans-serif; /*Segoe, если нет Arial или sans-serif -более похожий*/
+    float: left;
+}
+input{
+    -webkit-border-radius: 5px;
+    border-radius: 3px; 
+    margin: 5px;
+    padding:5px;
+    border: 1px solid silver;
+}
+input:focus{
+    background-color: #EEE9BF;
+    
+}
+textarea{
+    -webkit-border-radius: 5px;
+    border-radius: 3px; 
+    margin: 5px;
+    padding:5px;
+    border: 1px solid silver;
+}
+input[type=submit] {
+    background: #fff; 
+    cursor:pointer;
+    font-style: inherit;
+}
+input[type=submit]:active{
+    background-color: #FFDEAD;
+}
+input[type=submit]:hover{
+    background-color: #EEE9BF;
+    -webkit-transition: all.6s ease;  /*медленный переход*/
+    -moz-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    transition: all.6s ease; 
+}
+.clear{ /*сделать пространство*/
+    clear: both;
+    
+}
+
+/*HEADER*/
+#header{
+    width: 100%;
+    height: auto;
+}
+#header #logo{
+    width: 80%;
+    float: left;
+    height: auto;
+}
+#header #logIn{
+    width: 20%;
+    float: right;
+    height: auto;
+}
+#header #logOut{
+    padding-right: 5px;
+    text-align: end;
+    padding-bottom: 0px;
+}
+#header h6{
+    padding-left: 5px;
+    color: #ff2028;
+}
+#header #logIn a{
+    text-decoration: none;
+    color: #B4B4B4;
+}
+#header #logIn a:hover{
+    text-decoration: none;
+    color: #575757;
+}
+#menu{
+    padding-bottom: 2px;
+    padding-top: 2px;
+    width: 100%;
+    float: left;
+    background-color: #660000;
+    border-bottom: 1px solid #000 ;
+
+}
+#menu a{
+   font-size: 16px;
+   color: #fff;
+   text-decoration: none;
+   padding-left: 80px;
+   padding-right: 40px;
+   font-weight: 900;
+   padding-top: 80px; 
+}
+#menu a:hover {
+    color: #efdea0;
+    -webkit-transition: all.6s ease;  /*медленный переход*/
+    -moz-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    transition: all.6s ease; 
+}
+#menu a:active {
+    color: #8B795E;
+}
+#bucket {
+    width: 100%;
+    text-align: right; 
+    float: right;
+    margin-right: 3%;
+    
+}
+#bucket a{
+    color: #B4B4B4;
+    text-decoration: none;
+}
+#bucket a:hover{
+    text-decoration: none;
+    color: #575757;
+}
+
+
+
+/*CONTENT*/
+#content{
+    width: 80%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 70%;
+    
+}
+
+/*register*/
+#content #register h6{
+    padding-left: 5px;
+    color: #ff2028;
+}
+#content #register {
+    text-align: center;
+    padding: 10px;
+}
+#content #register input{
+    padding: 10px;
+    margin: 5px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px; 
+    border: 1px solid silver;
+}
+#content #register input[type=submit]{
+    cursor:pointer;
+}
+
+/*INDEX*/
+#about{
+    text-align: center;
+    padding: 20px;
+}
+#about img{
+    float:left;
+}
+
+/*CATALOG*/
+#catalog{
+    width: 95%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#catalog #categories{
+    text-align: center;
+    width: 20%;
+    float: left;
+
+     
+}
+#catalog #categories a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 900;
+    color: #E98400;
+}
+#catalog #categories a:hover{
+    color: #660000;
+}
+#catalog #prodcuts{
+    margin-left: 20px;
+    width: 75%;
+    float: left; 
+}
+#catalog #prodcuts #item{
+    min-height: 300px;
+    width: 250px;
+    float: left;
+    margin: 20px;
+    text-align: center;
+}
+#catalog #prodcuts #item #item_img{
+    height: 250px;
+    
+}
+#catalog #prodcuts #item #item_bottom h2 a{
+    color: #3E3E3E;
+    text-decoration: none;
+}
+#catalog #prodcuts #item #item_bottom a{
+    color: #646362;
+    text-decoration: none;
+}
+#catalog #prodcuts #item #item_bottom a:hover{
+    color: #000; 
+    text-decoration: none;
+}
+#catalog #prodcuts #item img{
+    border-radius: 5px; 
+    border: 1px solid silver;
+}
+#catalog #prodcuts #item input[type=submit] {
+    background: #fff;
+    cursor:pointer;
+    border: 1px solid silver;
+    padding: 5px;
+    border-radius: 2px; 
+}
+.pagination{
+    min-width: 90%;
+    margin-left: 5%;
+    float: left;
+}
+.pagination a{
+    text-decoration: none;
+    color: #E98400;
+}
+.pagination .active a{
+    text-decoration: none;
+    color: #660000;
+    font-weight: 500;
+}
+.pagination li{
+    display: inline;
+    margin-right: 5px; /* Отступ слева */
+    padding: 2px; /* Поля вокруг текста */
+}
+#content #product{
+    min-height: 300px;
+}
+#content #img{
+    float: left;    
+}
+
+/*feedback*/
+#content #feedback h6{
+    padding-left: 5px;
+    color: #ff2028;
+}
+#content #feedback{
+    text-align: center;
+}
+#content #feedback textarea{
+    width: 50%;
+    height: 200px;
+}
+
+/*CART*/
+#cart{
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+margin-bottom: 20px;
+}
+#butt-submit{
+    border: 1px solid silver;
+    color: black;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+
+#butt-submit:active{
+    background-color: #FFDEAD;
+}
+#butt-submit:hover{
+    background-color: #EEE9BF;
+    -webkit-transition: all.6s ease;  /*медленный переход*/
+    -moz-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    transition: all.6s ease; 
+}
+
+#cart table{
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+#cart table th{
+    border-bottom: 1px solid black;
+    border-left:  1px solid black;
+}
+#cart table td{
+    border: 1px solid silver;
+}
+
+
+
+/*#checkout*/
+#content #checkout {
+    text-align: center;
+    padding: 10px;
+}
+#content #checkout h6{
+    padding-left: 5px;
+    color: #ff2028;
+}
+#content #checkout input{
+    padding: 10px;
+    margin: 5px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px; 
+    border: 1px solid silver;
+}
+#content #checkout input[type=submit]{
+    cursor:pointer;
+}
+#content #admin-panel{
+    padding-left: 2%;
+}
+#content #admin-panel ul{
+    padding-left: 5%;
+    font-size: 20px;
+    color: #3E3E3E;
+}
+#content #admin-panel ul a{
+    color: #3E3E3E;
+}
+#content #admin-panel ul a:hover{
+    color: #3E3E3E;
+    text-decoration: underline;
+}
+/*#order*/
+#order{
+    width: 80%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#order table{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+     border: 1px solid black;
+}
+#order table th{
+    border-bottom: 1px solid black;
+    border-left:  1px solid black;
+}
+#order table ul{
+    padding-left: 20px;
+    text-align: left;
+}
+
+
+#order table td{
+    border: 1px solid silver;
+}
+
+/*category*/
+#content #category{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+#content #category a{
+    
+}
+#content #category table{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+#content #category table th{
+    border-bottom: 1px solid black;
+    border-left:  1px solid black;
+}
+#content #category table ul{
+    padding-left: 20px;
+    text-align: left;
+}
+#content #category table td{
+    border: 1px solid silver;
+}
+
+
+/*category*/
+#content #product-admin{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#content #product-admin table{
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+#content #product-admin table th{
+    border-bottom: 1px solid black;
+    border-left:  1px solid black;
+}
+#content #product-admin table ul{
+    padding-left: 20px;
+    text-align: left;
+}
+#content #product-admin table td{
+    border: 1px solid silver;
+}
+
+#admin-menu{
+    width: 95%;
+    float: left;
+    padding-left: 20px;
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+#admin-menu li { display: inline;
+     padding-right: 20px;
+}
+/*footer*/
+#wrap { 
+    width: 95%; 
+    display: table; 
+    position: relative; 
+    height: 100%; 
+    min-height: 100% !important;	
+    margin: auto;
+}
+#footer{
+    background-color: #660000;
+    color: white;
+    font-size: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: right;
+    border-top:1px solid black;
+    display: table-row; 
+    vertical-align: bottom; 
+    position: relative;
+    height: 20px;
+}
